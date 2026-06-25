@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import { FaBars, FaPaperPlane, FaXmark } from 'react-icons/fa6'
 
 const navItems = [
   { label: 'Inicio', href: '#home' },
   { label: 'Proyectos', href: '#projects' },
   { label: 'Stack', href: '#stack' },
+  { label: 'Formacion', href: '#education' },
   { label: 'Sobre mi', href: '#about' },
   { label: 'Contacto', href: '#contact' },
 ]
@@ -27,8 +29,7 @@ function Header() {
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((current) => !current)}
         >
-          <span />
-          <span />
+          {isMenuOpen ? <FaXmark aria-hidden="true" /> : <FaBars aria-hidden="true" />}
         </button>
 
         <div className={`nav-links ${isMenuOpen ? 'nav-links--open' : ''}`}>
@@ -38,6 +39,7 @@ function Header() {
             </a>
           ))}
           <a className="nav-cta" href="#contact" onClick={closeMenu}>
+            <FaPaperPlane aria-hidden="true" />
             Trabajemos
           </a>
         </div>
