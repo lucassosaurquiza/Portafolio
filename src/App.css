@@ -145,6 +145,51 @@ a {
   line-height: 0.95;
 }
 
+.hero-title {
+  display: grid;
+  gap: 0.04em;
+}
+
+.title-gradient {
+  display: block;
+  width: fit-content;
+  color: var(--text);
+}
+
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  .title-gradient {
+    color: transparent;
+    background-size: 220% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: title-gradient-shift 9s ease-in-out infinite alternate;
+  }
+
+  .title-gradient--medsync {
+    background-image: linear-gradient(110deg, #ffffff 0%, #e5e7eb 34%, #a3a3a3 68%, #f8fafc 100%);
+  }
+
+  .title-gradient--obxel {
+    background-image: linear-gradient(110deg, #f8fafc 0%, #d1d5db 32%, #8f8f8f 66%, #ffffff 100%);
+    animation-delay: 900ms;
+  }
+
+  .title-gradient--product {
+    background-image: linear-gradient(110deg, #ffffff 0%, #cfd3d8 30%, #737373 62%, #f8fafc 100%);
+    animation-delay: 1800ms;
+  }
+}
+
+@keyframes title-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 .hero-lead {
   max-width: 720px;
   margin: 28px 0 0;
@@ -177,8 +222,8 @@ a {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 18px rgba(255, 255, 255, 0.7);
+  background: #22c55e;
+  box-shadow: 0 0 18px rgba(34, 197, 94, 0.8);
 }
 
 .hero-actions {
@@ -382,7 +427,7 @@ a {
 }
 
 .project-card .project-preview {
-  min-height: 230px;
+  min-height: 250px;
   margin-bottom: 26px;
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -418,9 +463,8 @@ a {
   height: 100%;
   min-height: inherit;
   display: block;
-  padding: 28px;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: center top;
   filter: saturate(0.92) contrast(1.02);
   transition: transform 450ms ease, filter 450ms ease;
 }
@@ -575,6 +619,7 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .title-gradient,
   .tech-icon,
   .stack-column li,
   .stack-column li:hover .tech-icon,
@@ -811,7 +856,7 @@ a {
   }
 
   .project-preview img {
-    padding: 14px;
+    object-position: center top;
   }
 
   .project-content,

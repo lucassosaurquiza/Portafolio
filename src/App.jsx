@@ -24,7 +24,7 @@ const projects = [
     imageAlt: 'Pagina principal de Obxel con hero de consultoria tecnologica y software destacado',
   },
   {
-    name: 'Landing Empresarial',
+    name: 'Exporting Experts',
     category: 'Landing page / Negocio',
     description:
       'Pagina empresarial pensada para comunicar servicios, generar confianza y convertir visitas en contactos comerciales.',
@@ -105,7 +105,7 @@ const contactLinks = [
   {
     label: 'Email',
     value: 'lucassosaurquiza97@gmail.com',
-    href: 'mailto:lucassosaurquiza97@gmail.com',
+    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=lucassosaurquiza97@gmail.com&su=Consulta%20desde%20tu%20portfolio',
   },
   {
     label: 'GitHub',
@@ -264,7 +264,11 @@ function App() {
                 <span />
                 Disponible para nuevos proyectos
               </p>
-              <h1>Full Stack Developer & Product Builder</h1>
+              <h1 className="hero-title" aria-label="Full Stack Developer and Product Builder">
+                <span className="title-gradient title-gradient--medsync">Full Stack</span>
+                <span className="title-gradient title-gradient--obxel">Developer</span>
+                <span className="title-gradient title-gradient--product">& Product Builder</span>
+              </h1>
               <p className="hero-lead">
                 Soy Lucas Sosa Urquiza. Construyo productos digitales completos,
                 desde la interfaz hasta la logica backend, con foco en claridad,
