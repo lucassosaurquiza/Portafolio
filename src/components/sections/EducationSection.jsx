@@ -8,7 +8,7 @@ function EducationSection() {
       <SectionIntro
         eyebrow="Formacion"
         title="Estudios y certificaciones"
-        description="Combino formacion academica con aprendizaje continuo en programacion, diseno digital y producto. Esta seleccion muestra los certificados mas relevantes para mi perfil full stack."
+        description="Combino formacion academica con aprendizaje continuo en programacion, diseño digital y producto. Esta seleccion muestra los certificados mas relevantes para mi perfil full stack."
       />
 
       <div className="education-summary">

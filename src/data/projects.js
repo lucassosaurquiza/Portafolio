@@ -18,8 +18,8 @@ export const projects = [
     description:
       'Landing moderna orientada a presentar una marca digital con buena jerarquia visual, secciones claras y foco en conversion.',
     stack: ['React', 'CSS', 'Vercel'],
-    url: 'https://obxel.vercel.app/',
-    image: '/projects/obxel-preview.png',
+    url: 'https://www.obxel.com/',
+    image: '/projects/imagen-de-portafolio.png',
     imageAlt: 'Pagina principal de Obxel con hero de consultoria tecnologica y software destacado',
     imageFit: 'cover',
     imagePosition: 'center top',

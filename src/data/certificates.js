@@ -31,7 +31,7 @@ export const certificatesByCategory = [
     ],
   },
   {
-    category: 'Diseno Digital',
+    category: 'Diseño Digital',
     description:
       'Maquetacion, responsive design y estructura visual para crear interfaces claras, adaptables y listas para usuarios reales.',
     certificates: [
@@ -48,7 +48,7 @@ export const certificatesByCategory = [
         file: '/certificates/responsive-mobile-first.pdf',
       },
       {
-        title: 'Curso de Diseno Web con CSS Grid y Flexbox',
+        title: 'Curso de Diseño Web con CSS Grid y Flexbox',
         platform: 'Platzi',
         icon: 'layout',
         file: '/certificates/diseno-web-grid-flexbox.pdf',
@@ -56,7 +56,7 @@ export const certificatesByCategory = [
     ],
   },
   {
-    category: 'Diseno de Producto',
+    category: 'Diseño de Producto',
     description:
       'Herramientas para entender problemas, validar ideas y conectar desarrollo de software con modelos de negocio.',
     certificates: [

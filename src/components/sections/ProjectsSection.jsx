@@ -25,7 +25,7 @@ function ProjectsSection() {
       <SectionIntro
         eyebrow="Portfolio"
         title="Proyectos destacados"
-        description="Estos proyectos muestran practica real de frontend, despliegue, diseno de interfaces y construccion orientada a producto."
+        description="Estos proyectos muestran practica real de frontend, despliegue, diseño de interfaces y construccion orientada a producto."
       />
 
       {featuredProject && (
